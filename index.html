@@ -49,7 +49,13 @@
     .name {
       font-size: 34px;
       font-weight: 700;
-      margin-bottom: 15px;
+      margin: 0 0 4px;
+    }
+    .subtitle {
+      margin: 0 0 12px;
+      color: #555;
+      font-size: 16px;
+      text-align: left;
     }
     .links {
       margin: 15px 0 25px;
@@ -104,6 +110,7 @@
     }
     @media (max-width: 600px) {
       .header { flex-direction: column; text-align: center; }
+      .subtitle { text-align: center; }
       .profile-img { width: 120px; height: 120px; }
       .pub { flex-direction: column; }
       .pub-thumb { width: 100%; height: auto; max-height: 200px; }
@@ -116,8 +123,9 @@
     <div class="header">
       <div class="header-left">
         <p class="name">Kailang Ma (麻开朗)</p>
+        <p class="subtitle">Incoming Ph.D. Student at KAIST · World Models &amp; Autonomous Driving</p>
         <p class="links">
-          <a href="mailto:mankasto229@gmail.com">Email</a> &nbsp;/&nbsp;
+          <a href="mailto:mankasto@kaist.ac.kr">Email</a> &nbsp;/&nbsp;
           <a href="https://scholar.google.com/citations?user=kd46FagAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp;/&nbsp;
           <a href="https://github.com/mankasto">GitHub</a>
         </p>
@@ -130,11 +138,11 @@
     <h2>About Me</h2>
 
     <p>
-      I am currently a Perception Algorithm Engineer at <a href="https://www.weride.ai">Weride</a>, a Tier-1 L4 autonomous driving company, where I work on traffic light detection and state estimation systems. I received my M.S. degree in Cyberspace Security from <a href="https://cst.buaa.edu.cn">Beihang University (BUAA)</a> in 2024, and my B.S. degree from the same university in 2021. During my master's study, I was a research intern at Tsinghua University working on wafer defect detection. I also spent time at Weride as an intern before joining full-time.
+      I am an incoming Ph.D. student at <a href="https://www.kaist.ac.kr/en/">KAIST</a>. I currently work as a Perception Algorithm Engineer at <a href="https://www.weride.ai">WeRide</a>, where I develop traffic-light detection and state-estimation systems for autonomous driving. I received my M.S. degree in Cyberspace Security from <a href="https://cst.buaa.edu.cn">Beihang University (BUAA)</a> in 2024 and my B.S. degree from the same university in 2021.
     </p>
 
     <p>
-      My current research interest focuses on <strong>World Models</strong>, particularly their applications in autonomous driving and embodied AI. I am interested in how world models can enable better understanding, prediction, and decision-making in complex dynamic environments.
+      My research focuses on <strong>world models</strong>, autonomous driving, embodied AI, and trustworthy machine learning. I am particularly interested in how learning systems can represent uncertainty, anticipate decision-relevant consequences, and make recoverable decisions in complex dynamic environments.
     </p>
 
     <h2>Publications</h2>
@@ -150,7 +158,8 @@
         <br>
         <div class="pub-links">
           <a href="https://openreview.net/forum?id=FIrQfNSOoTr">[Paper]</a>
-          <a href="https://github.com/BUAA-CST/iLRG">[Code]</a>
+          <a href="https://github.com/mankasto/iLRG">[Code]</a>
+          <a href="https://iclr.cc/media/iclr-2023/Slides/11872.pdf">[Slides]</a>
         </div>
       </div>
     </div>
