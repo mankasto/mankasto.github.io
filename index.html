@@ -405,6 +405,30 @@
     .education-logo.buaa { background: #12559a; }
     .education-logo img { max-width: 80px; max-height: 80px; object-fit: contain; }
     .education-logo.buaa img { max-width: 82px; height: auto; }
+    .education-marks {
+      display: flex;
+      flex: 0 0 148px;
+      gap: 8px;
+    }
+    .education-marks .education-logo {
+      flex-basis: 70px;
+      width: 70px;
+      height: 70px;
+      border-radius: 13px;
+    }
+    .education-logo.cst {
+      position: relative;
+      background: #5aa7df;
+    }
+    .education-logo.cst img {
+      position: absolute;
+      left: 0;
+      max-width: none;
+      max-height: none;
+      width: auto;
+      height: 70px;
+      transform: translateX(-363px);
+    }
     .education-card h3 { margin: 0 0 7px; font-size: 16px; }
     .degree { margin: 4px 0; color: #405064; font-size: 13px; line-height: 1.5; }
     .degree span { color: var(--muted); }
@@ -487,7 +511,7 @@
       .experience-date { display: inline-block; margin-top: 10px; white-space: normal; }
       .publication-card { grid-template-columns: 1fr; }
       .pub-thumb { width: 100%; height: auto; max-height: 210px; }
-      .education-card { align-items: flex-start; }
+      .education-card { flex-direction: column; align-items: flex-start; }
       .education-logo { flex-basis: 72px; width: 72px; height: 72px; }
       .education-logo img { max-width: 62px; max-height: 62px; }
       .award-item { grid-template-columns: 58px 1fr; gap: 12px; }
@@ -621,7 +645,7 @@
       </div>
       <div class="education-grid">
         <article class="education-card"><div class="education-logo"><img src="images/kaist-logo.png" alt="KAIST logo"></div><div><h3><a href="https://www.kaist.ac.kr/en/">KAIST</a></h3><p class="degree">Ph.D. Student <span>· 2026–Present</span></p><p class="degree">World Models &amp; Autonomous Driving</p></div></article>
-        <article class="education-card"><div class="education-logo buaa"><img src="images/buaa-logo.png" alt="Beihang University logo"></div><div><h3><a href="https://www.buaa.edu.cn/">Beihang University (BUAA)</a></h3><p class="degree">School of Cyber Science and Technology</p><p class="degree">M.S. in Cyberspace Security <span>· 2024</span></p><p class="degree">B.S. in Information Security <span>· 2021</span></p></div></article>
+        <article class="education-card"><div class="education-marks"><div class="education-logo buaa"><img src="images/buaa-logo.png" alt="Beihang University logo"></div><div class="education-logo cst"><img src="images/buaa-cst-logo.png" alt="School of Cyber Science and Technology logo"></div></div><div><h3><a href="https://www.buaa.edu.cn/">Beihang University (BUAA)</a></h3><p class="degree"><a href="https://cst.buaa.edu.cn/">School of Cyber Science and Technology</a></p><p class="degree">M.S. in Cyberspace Security <span>· 2024</span></p><p class="degree">B.S. in Information Security <span>· 2021</span></p></div></article>
       </div>
     </section>
 
