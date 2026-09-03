@@ -371,6 +371,7 @@
       background: var(--surface-soft);
       object-fit: cover;
     }
+    .pub-thumb.contain { padding: 6px; background: #ffffff; object-fit: contain; }
     .publication-body { align-self: center; }
     .pub-badges { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 8px; }
     .venue-badge {
@@ -389,6 +390,16 @@
       border-radius: 6px;
       background: #e8f7f7;
       color: #176f79;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+    .review-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: #fff3d8;
+      color: #8a5b00;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.03em;
@@ -653,9 +664,13 @@
     <section class="section" id="publications" aria-labelledby="publications-title">
       <div class="section-heading">
         <div><span class="section-kicker">Research Output</span><h2 id="publications-title">Selected Publications</h2></div>
-        <p class="section-intro">Work on federated learning privacy and interpretable deep learning.</p>
+        <p class="section-intro">Work on safety-critical world models, federated learning privacy, and interpretable deep learning.</p>
       </div>
       <div class="publications">
+        <article class="publication-card">
+          <img src="images/riwm.png" alt="Progression from predictive to consequential and reflective world modeling" class="pub-thumb contain">
+          <div class="publication-body"><div class="pub-badges"><span class="review-badge">Under Review</span><span class="role-badge">Perspective</span></div><span class="pub-title">Rethinking World Models for Safety-Critical Embodied Systems</span><span class="pub-authors"><strong>Kailang Ma</strong>, Heye Huang, Inhi Kim, Kitae Jang</span><span class="pub-conf">Under review at the <a href="https://www.sciopen.com/journal/2399-9802">Journal of Intelligent and Connected Vehicles (JICV)</a></span><p class="pub-summary">Introduces the Risk-Informed World Model (RIWM), a decision-centric framework that connects decision-relevant representation, counterfactual reasoning, safety-critical episodic memory, and runtime safety assurance.</p></div>
+        </article>
         <article class="publication-card">
           <img src="images/ilrg.jpg" alt="Illustration for iLRG" class="pub-thumb">
           <div class="publication-body"><div class="pub-badges"><span class="venue-badge">ICLR 2023</span><span class="role-badge">First Author</span></div><span class="pub-title">Instance-wise Batch Label Restoration via Gradients in Federated Learning</span><span class="pub-authors"><strong>Kailang Ma</strong>, Yu Sun, Jian Cui, et al.</span><span class="pub-conf">International Conference on Learning Representations</span><p class="pub-summary">An analytical, instance-wise label restoration method that derives a linear system from gradients and model probabilities for one-step recovery.</p><div class="pub-links"><a href="https://openreview.net/forum?id=FIrQfNSOoTr">Paper</a><a href="https://github.com/mankasto/iLRG">Code</a><a href="https://iclr.cc/media/iclr-2023/Slides/11872.pdf">Slides</a></div></div>
