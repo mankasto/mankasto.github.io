@@ -326,6 +326,21 @@
       background: #f9fcfe;
       object-fit: contain;
     }
+    .organization-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 36px;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #d9e5ee;
+      border-radius: 10px;
+      background: #f3f7fb;
+      color: var(--blue-dark);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
     .experience-role { display: block; font-size: 16px; font-weight: 700; line-height: 1.35; }
     .experience-company { display: block; margin-top: 3px; color: var(--muted); font-size: 13px; }
     .experience-date {
@@ -357,9 +372,9 @@
       object-fit: cover;
     }
     .publication-body { align-self: center; }
+    .pub-badges { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 8px; }
     .venue-badge {
       display: inline-block;
-      margin-bottom: 8px;
       padding: 3px 8px;
       border-radius: 6px;
       background: var(--surface-blue);
@@ -368,9 +383,20 @@
       font-weight: 700;
       letter-spacing: 0.04em;
     }
+    .role-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: #e8f7f7;
+      color: #176f79;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
     .pub-title { display: block; margin-bottom: 6px; font-size: 16px; font-weight: 700; line-height: 1.45; }
     .pub-authors, .pub-conf { display: block; color: var(--muted); font-size: 13px; }
     .pub-authors strong { color: var(--ink); }
+    .pub-summary { margin: 9px 0 0; color: #405064; font-size: 13px; line-height: 1.55; }
     .pub-links { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 12px; }
     .pub-links a {
       padding: 4px 9px;
@@ -426,6 +452,17 @@
     .education-card h3 { margin: 0 0 7px; font-size: 16px; }
     .degree { margin: 4px 0; color: #405064; font-size: 13px; line-height: 1.5; }
     .degree span { color: var(--muted); }
+    .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .skill-card {
+      min-height: 126px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface);
+      box-shadow: 0 10px 30px rgba(22, 48, 78, 0.045);
+    }
+    .skill-card h3 { margin: 0 0 9px; color: var(--blue-dark); font-size: 14px; }
+    .skill-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
     .awards-list { overflow: hidden; border-radius: var(--radius-md); }
     .award-item {
       display: grid;
@@ -484,6 +521,7 @@
       .news-item { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
       .news-item:last-child { border-bottom: 0; }
       .about-grid, .education-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 620px) {
       .nav-inner { min-height: 56px; padding: 0 18px; }
@@ -508,6 +546,7 @@
       .education-card { flex-direction: column; align-items: flex-start; }
       .education-logo { flex-basis: 72px; width: 72px; height: 72px; }
       .education-logo img { max-width: 62px; max-height: 62px; }
+      .skills-grid { grid-template-columns: 1fr; }
       .award-item { grid-template-columns: 58px 1fr; gap: 12px; }
       .award-note { grid-column: 2; justify-self: start; }
       .award-links { grid-column: 2; justify-content: flex-start; }
@@ -612,6 +651,15 @@
             <li>Added pseudo-labels that satisfied the calibrated thresholds to the training set, retrained the model, and repeated the cycle. The framework met its design objectives and increased annotation throughput by more than 5×.</li>
           </ul>
         </article>
+        <article class="experience-card">
+          <div class="experience-top">
+            <div class="organization"><span class="organization-mark" aria-hidden="true">THU</span><div><span class="experience-role">Research Intern</span><span class="experience-company">Department of Precision Instrument · Tsinghua University</span></div></div>
+            <span class="experience-date"><time datetime="2023-03">Mar 2023</time> – <time datetime="2023-04">Apr 2023</time></span>
+          </div>
+          <ul>
+            <li>Contributed to the development and optimization of deep-learning models for wafer defect detection.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -623,11 +671,11 @@
       <div class="publications">
         <article class="publication-card">
           <img src="images/ilrg.jpg" alt="Illustration for iLRG" class="pub-thumb">
-          <div class="publication-body"><span class="venue-badge">ICLR 2023</span><span class="pub-title">Instance-wise Batch Label Restoration via Gradients in Federated Learning</span><span class="pub-authors"><strong>Kailang Ma</strong>, Yu Sun, Jian Cui, et al.</span><span class="pub-conf">International Conference on Learning Representations</span><div class="pub-links"><a href="https://openreview.net/forum?id=FIrQfNSOoTr">Paper</a><a href="https://github.com/mankasto/iLRG">Code</a><a href="https://iclr.cc/media/iclr-2023/Slides/11872.pdf">Slides</a></div></div>
+          <div class="publication-body"><div class="pub-badges"><span class="venue-badge">ICLR 2023</span><span class="role-badge">First Author</span></div><span class="pub-title">Instance-wise Batch Label Restoration via Gradients in Federated Learning</span><span class="pub-authors"><strong>Kailang Ma</strong>, Yu Sun, Jian Cui, et al.</span><span class="pub-conf">International Conference on Learning Representations</span><p class="pub-summary">An analytical, instance-wise label restoration method that derives a linear system from gradients and model probabilities for one-step recovery.</p><div class="pub-links"><a href="https://openreview.net/forum?id=FIrQfNSOoTr">Paper</a><a href="https://github.com/mankasto/iLRG">Code</a><a href="https://iclr.cc/media/iclr-2023/Slides/11872.pdf">Slides</a></div></div>
         </article>
         <article class="publication-card">
           <img src="images/crosscam.jpg" alt="Illustration for Cross-CAM" class="pub-thumb">
-          <div class="publication-body"><span class="venue-badge">KSEM 2022</span><span class="pub-title">Cross-CAM: Focused Visual Explanations for Deep Convolutional Networks via Training-Set Tracing</span><span class="pub-authors">Yu Sun, <strong>Kailang Ma</strong>, Xuanxin Liu, et al.</span><span class="pub-conf">International Conference on Knowledge Science, Engineering and Management</span><div class="pub-links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-10983-6_56">Paper</a></div></div>
+          <div class="publication-body"><div class="pub-badges"><span class="venue-badge">KSEM 2022</span><span class="role-badge">Student First Author</span></div><span class="pub-title">Cross-CAM: Focused Visual Explanations for Deep Convolutional Networks via Training-Set Tracing</span><span class="pub-authors">Yu Sun, <strong>Kailang Ma</strong>, Xuanxin Liu, et al.</span><span class="pub-conf">International Conference on Knowledge Science, Engineering and Management</span><p class="pub-summary">A training-set-aware visual explanation method combining gradient and prototype-similarity weights, with Intersection-over-Self (IoS) for measuring target focus.</p><div class="pub-links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-10983-6_56">Paper</a></div></div>
         </article>
       </div>
     </section>
@@ -640,6 +688,19 @@
       <div class="education-grid">
         <article class="education-card"><div class="education-logo"><img src="images/kaist-logo.png" alt="KAIST logo"></div><div><h3><a href="https://www.kaist.ac.kr/en/">KAIST</a></h3><p class="degree">Ph.D. Student <span>· 2026–Present</span></p><p class="degree">World Models &amp; Autonomous Driving</p></div></article>
         <article class="education-card"><div class="education-marks"><div class="education-logo buaa"><img src="images/buaa-mark.png" alt="Beihang University logo"></div><div class="education-logo cst"><img src="images/buaa-cst-mark.png" alt="School of Cyber Science and Technology logo"></div></div><div><h3><a href="https://www.buaa.edu.cn/">Beihang University (BUAA)</a></h3><p class="degree"><a href="https://cst.buaa.edu.cn/">School of Cyber Science and Technology</a></p><p class="degree">M.S. in Cyberspace Security <span>· 2024</span></p><p class="degree">B.S. in Information Security <span>· 2021</span></p></div></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <div><span class="section-kicker">Toolbox</span><h2 id="skills-title">Technical Skills</h2></div>
+        <p class="section-intro">A focused toolkit for learning-based perception research and production deployment.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><h3>Programming</h3><p>Python · C/C++ · Shell</p></article>
+        <article class="skill-card"><h3>Frameworks</h3><p>PyTorch · TensorFlow</p></article>
+        <article class="skill-card"><h3>Perception</h3><p>Classification · 2D Object Detection · Anomaly Detection</p></article>
+        <article class="skill-card"><h3>Engineering</h3><p>Linux · Data Pipelines · Model Deployment · C++ Fallback Systems</p></article>
       </div>
     </section>
 
