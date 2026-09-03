@@ -130,3 +130,53 @@ Use the same three candidate actions in the reasoning and decision stages so the
 - **End-to-end contract — pass:** the figure names both the conditioning information and the risk-aware outputs.
 - **Action semantics — pass:** counterfactual branches and downstream decisions use consistent action-risk pairings.
 - **Thumbnail readability — pass:** the hierarchy remains recognizable in a 420-pixel-wide reduction; the high-resolution export is 1672 × 941.
+
+## Aspect-ratio correction: compact 3:2 layout
+
+### Critic finding
+
+The 16:9 canvas forces all six capability modules into one horizontal row. At the website's native 190 × 120 publication-thumbnail footprint, each module receives only about one sixth of the width, so its question, output, and evidence become too small. Enlarging the HTML container does not address the requested artifact-level problem and must not be used as the remedy.
+
+### Revised canvas and organization
+
+- **Canvas:** 1536 × 1024 pixels, exact 3:2 landscape ratio, designed to fit a 190 × 120 thumbnail with minimal unused space.
+- **Structure:** a compact 2 × 3 capability matrix rather than a six-column strip.
+- **Reading order:** use a compact snake path: top row `Generation → Modeling → Understanding`; a short downward connector enters `Reasoning` at the lower right; the lower path then continues right-to-left through `Decision → Verification`. Spatial placement may reverse the lower row, but arrow direction and label order must preserve the exact conceptual sequence.
+- **Shared context:** one compact embodied-scene strip spans the center between the two rows and remains subordinate to the capability modules.
+- **Information contract:** the input/output contract becomes a slim footer band rather than consuming a full horizontal tier.
+
+### Treatment budget
+
+- **Expanded:** the six capability headings, their exact core questions, and their exact decision-relevant outputs.
+- **Summarized:** one evidence-bearing technical motif inside each capability module.
+- **Referenced:** the shared autonomous-driving and robotic-manipulation context, shown once.
+- **Omitted:** repeated scenes, legends that merely decode obvious objects, decorative sensor markers, large empty margins, and duplicated action labels.
+
+### Skeleton specification
+
+Use three aligned columns with generous but compact gutters. The upper row occupies roughly 34% of the canvas, the shared scene and transition rail roughly 24%, the lower row roughly 34%, and the footer contract roughly 8%. All six module headings share one anchor convention. Arrows run only through whitespace corridors. The short right-edge turn from `Understanding` to `Reasoning` is visibly navigational rather than a data-flow claim; the lower arrows point right-to-left from `Reasoning` through `Decision` to `Verification`.
+
+### Frozen semantics
+
+- Preserve the exact six capability names, questions, and outputs from the table above.
+- Preserve the conceptual progression without implying that the survey proposes a runnable six-block neural architecture.
+- Candidate actions remain owned by the embodied agent.
+- Preserve `yield → low risk`, `slow → uncertain`, and `proceed → unsafe` for the depicted crossing scenario.
+- Verification checks evidence, rules, and constraints; it does not guarantee safety.
+
+### Ratio-correction red lines
+
+- Reject any return to a single six-column row.
+- Reject text smaller than the existing 16:9 version at equal thumbnail height.
+- Reject a dashboard-like wall of six heavy cards; use alignment, thin separators, and whitespace.
+- Reject a shared scene that dominates the capability progression.
+- Reject any changed, missing, or garbled required label.
+
+### Final 3:2 QA
+
+- **Check A — pass:** the survey-level capability ontology, actor ownership, action-risk examples, and verification scope are unchanged.
+- **Check B/B2 — pass after revision:** the final uses a compact snake path rather than the skeleton's misleading long turn; heavy cards and numbered badges were removed.
+- **Faithfulness — pass:** all six exact capability questions and outputs remain present, with no invented model architecture.
+- **Conciseness — pass:** one shared context and one evidence motif per capability replace repeated contextual scenes.
+- **Readability — pass:** the 1536 × 1024 raster uses a 3:2 footprint and three modules per row; the six headings and evidence classes remain distinguishable in a 190-pixel-wide reduction.
+- **Aesthetics — pass:** open alignment, restrained separators, consistent technical illustration, and semantic color roles preserve the established figure family.
