@@ -47,3 +47,48 @@ Avoid manuscript outlines, section numbers, paper titles inside the image, bench
 - Readability: pass — the six headings remain legible and the macro progression remains recognizable after thumbnail reduction.
 - Aesthetics: pass — consistent 2.5D scene family, controlled semantic palette, crisp rendering, and no visible generation artifacts affecting the main scientific meaning.
 
+## Optimization pass: effective-information redesign
+
+### Critic finding
+
+The first raster version is visually polished but fails the conciseness gate. Repeated driving frames, repeated robot rollouts, multiple decision rows, duplicated verification panels, and numerous pictograms consume attention without adding distinct scientific information at thumbnail size.
+
+### Revised information budget
+
+- **Expanded anchor:** one shared safety-critical embodied scene containing an autonomous vehicle, a robot manipulator, a human, and one physical environment.
+- **Expanded progression:** the six exact capability headings in one continuous arc or layered ribbon.
+- **One evidence transformation per level:** future fan; structured state; relational understanding; counterfactual branching; ranked choice; independent safety gate.
+- **Referenced only:** driving and robotics are recognizable objects within the single shared scene, not separate rows or repeated panels.
+- **Omitted:** repeated time-frame grids, duplicate verification blocks, gauges, checkbox arrays, candidate cards, decorative cameras, decorative sensors, and all secondary prose.
+
+### Revised layout
+
+Use a compact center-and-progression composition. Place one coherent isometric embodied scene as the lower central anchor. Arrange six large, evenly spaced capability stations in a shallow arc above it, connected by a single clean directional ribbon. Each station contains exactly one meaningful technical visual. The scene is observed once and transformed conceptually across the six stations; it must not be repeated inside each station. Verification ends at a single shield/gate adjacent to the real-world action path.
+
+### Frozen preservation list
+
+- Exact left-to-right order: Generation → Modeling → Understanding → Reasoning → Decision → Verification.
+- Candidate actions originate from the embodied agent; future branches are consequences.
+- Reasoning compares risk across alternatives.
+- Decision may select, defer, or reject.
+- Verification checks evidence and constraints before execution without claiming guaranteed safety.
+
+### Atomic edit list
+
+1. Replace the two large driving/robotics lanes with one shared scene.
+2. Replace every repeated thumbnail sequence with one compact semantic mark.
+3. Remove all dashboard-like choice cards and progress bars.
+4. Remove duplicate shields and verification panels; retain one terminal safety gate.
+5. Increase whitespace around the six headings and simplify connector routing to one progression ribbon.
+6. Preserve high-quality raster rendering, coherent isometric perspective, and the restrained navy/blue/amber/teal palette.
+
+### Final rendering contract
+
+Use the approved open progression skeleton rather than six containers. Place the exact headings `Generation`, `Modeling`, `Understanding`, `Reasoning`, `Decision`, and `Verification` once each above a single rising arc. Render one scientific transformation per stage: a future fan, a structured spatial state, a relation-and-constraint graph, a three-way risk branch, a select/defer/reject ranking, and an evidence-plus-constraints safety gate. Use one shared lower isometric scene containing one vehicle, one pedestrian, one robot arm, and one manipulated object. Keep scene detail subordinate to the capability chain. Use navy structure, blue predictive evidence, amber uncertainty, teal verification, and red only for the unsafe branch. Do not add cards, dashboards, repeated environments, repeated future frames, decorative sensors, duplicate shields, titles, subtitles, captions, or small explanatory paragraphs.
+
+### Final QA
+
+- **Faithfulness — pass:** exact six-stage order and source-grounded responsibility are preserved; action ownership and consequence branches are not inverted.
+- **Conciseness — pass:** each stage contains one unique evidence type; repeated scenes, icon grids, dashboards, and duplicate verification elements are removed.
+- **Readability — pass:** the six headings and global progression remain recognizable in the 1672 × 941 export and the 380 × 214 reduction.
+- **Aesthetics — pass:** one coherent 2.5D environment, controlled semantic palette, open grouping, and clean connector routing replace the previous collage-like density.
