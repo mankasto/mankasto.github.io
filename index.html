@@ -452,17 +452,6 @@
     .education-card h3 { margin: 0 0 7px; font-size: 16px; }
     .degree { margin: 4px 0; color: #405064; font-size: 13px; line-height: 1.5; }
     .degree span { color: var(--muted); }
-    .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-    .skill-card {
-      min-height: 126px;
-      padding: 20px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: var(--surface);
-      box-shadow: 0 10px 30px rgba(22, 48, 78, 0.045);
-    }
-    .skill-card h3 { margin: 0 0 9px; color: var(--blue-dark); font-size: 14px; }
-    .skill-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
     .awards-list { overflow: hidden; border-radius: var(--radius-md); }
     .award-item {
       display: grid;
@@ -521,7 +510,6 @@
       .news-item { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
       .news-item:last-child { border-bottom: 0; }
       .about-grid, .education-grid { grid-template-columns: 1fr; }
-      .skills-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 620px) {
       .nav-inner { min-height: 56px; padding: 0 18px; }
@@ -546,7 +534,6 @@
       .education-card { flex-direction: column; align-items: flex-start; }
       .education-logo { flex-basis: 72px; width: 72px; height: 72px; }
       .education-logo img { max-width: 62px; max-height: 62px; }
-      .skills-grid { grid-template-columns: 1fr; }
       .award-item { grid-template-columns: 58px 1fr; gap: 12px; }
       .award-note { grid-column: 2; justify-self: start; }
       .award-links { grid-column: 2; justify-content: flex-start; }
@@ -568,7 +555,7 @@
         <a href="#experience" target="_self">Experience</a>
         <a href="#publications" target="_self">Publications</a>
         <a href="#education" target="_self">Education</a>
-        <a href="#awards" target="_self">Awards</a>
+        <a href="#awards" target="_self">Honors</a>
       </div>
     </div>
   </nav>
@@ -691,30 +678,20 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="skills-title">
-      <div class="section-heading">
-        <div><span class="section-kicker">Toolbox</span><h2 id="skills-title">Technical Skills</h2></div>
-        <p class="section-intro">A focused toolkit for learning-based perception research and production deployment.</p>
-      </div>
-      <div class="skills-grid">
-        <article class="skill-card"><h3>Programming</h3><p>Python · C/C++ · Shell</p></article>
-        <article class="skill-card"><h3>Frameworks</h3><p>PyTorch · TensorFlow</p></article>
-        <article class="skill-card"><h3>Perception</h3><p>Classification · 2D Object Detection · Anomaly Detection</p></article>
-        <article class="skill-card"><h3>Engineering</h3><p>Linux · Data Pipelines · Model Deployment · C++ Fallback Systems</p></article>
-      </div>
-    </section>
-
     <section class="section" id="awards" aria-labelledby="awards-title">
       <div class="section-heading">
-        <div><span class="section-kicker">Recognition</span><h2 id="awards-title">Awards</h2></div>
-        <p class="section-intro">Selected distinctions in autonomous driving, AI, and academic achievement.</p>
+        <div><span class="section-kicker">Recognition</span><h2 id="awards-title">Honors &amp; Awards</h2></div>
+        <p class="section-intro">Selected distinctions in research, autonomous driving, and academic achievement.</p>
       </div>
       <div class="awards-list">
         <div class="award-item"><span class="award-year">2026</span><span class="award-title">Provisional Second Place Overall, <a href="https://onsite.com.cn/#/dist/costomPage?menuId=314">OnSite Autonomous Driving Algorithm Challenge — Safety of the Intended Functionality (SOTIF) Track</a></span><span class="award-note">Final results pending</span></div>
-        <div class="award-item"><span class="award-year">2022–24</span><span class="award-title">First-Class Graduate Academic Scholarship, Beihang University</span><span></span></div>
         <div class="award-item"><span class="award-year">2023</span><span class="award-title">First Prize, WeRide Excellent Project Award — Traffic-Light Recognition and Prediction</span><span></span></div>
         <div class="award-item"><span class="award-year">2023</span><span class="award-title">Second Prize, ByteDance Security &amp; Risk Control Bootcamp</span><span></span></div>
+        <div class="award-item"><span class="award-year">2021–24</span><span class="award-title"><strong>Graduate academic record:</strong> GPA 3.87/4.00 · M.S. Entrance Examination 419/500 (Ranked 2nd)</span><span></span></div>
+        <div class="award-item"><span class="award-year">2021–24</span><span class="award-title">First-Class Graduate Academic Scholarship (2022–2024) · First-Class Graduate Entrance Scholarship (2021–2022), Beihang University</span><span></span></div>
         <div class="award-item"><span class="award-year">2021</span><span class="award-title">Second Prize, National Finals, China Collegiate Computer Contest — AI Creativity Challenge (2021 Edition)</span><span class="award-links"><a href="https://aistudio.baidu.com/projectdetail/2186073">Project</a><a href="http://aicontest.baidu.com/index.html">Competition</a></span></div>
+        <div class="award-item"><span class="award-year">2017–21</span><span class="award-title"><strong>Undergraduate academic record:</strong> GPA 3.71/4.00</span><span></span></div>
+        <div class="award-item"><span class="award-year">2017–19</span><span class="award-title">National Encouragement Scholarship (2017–2018, 2018–2019) · Second-Class Scholarship for Outstanding Undergraduate Students (2017–2018), Beihang University</span><span></span></div>
       </div>
     </section>
 
