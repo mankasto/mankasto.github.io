@@ -429,6 +429,26 @@
       font-weight: 700;
       white-space: nowrap;
     }
+    .award-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: flex-end;
+    }
+    .award-links a {
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--surface-soft);
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .award-links a:hover {
+      border-color: #9fc2df;
+      background: var(--surface-blue);
+    }
     .footer {
       display: flex;
       justify-content: space-between;
@@ -472,6 +492,7 @@
       .education-logo img { max-width: 62px; max-height: 62px; }
       .award-item { grid-template-columns: 58px 1fr; gap: 12px; }
       .award-note { grid-column: 2; justify-self: start; }
+      .award-links { grid-column: 2; justify-content: flex-start; }
       .footer { display: block; }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -614,7 +635,7 @@
         <div class="award-item"><span class="award-year">2022–24</span><span class="award-title">First-Class Graduate Academic Scholarship, Beihang University</span><span></span></div>
         <div class="award-item"><span class="award-year">2023</span><span class="award-title">First Prize, WeRide Excellent Project Award — Traffic-Light Recognition and Prediction</span><span></span></div>
         <div class="award-item"><span class="award-year">2023</span><span class="award-title">Second Prize, ByteDance Security &amp; Risk Control Bootcamp</span><span></span></div>
-        <div class="award-item"><span class="award-year">2021</span><span class="award-title">Second Prize, National Finals, China Collegiate Computer Contest — AI Creativity Challenge</span><span></span></div>
+        <div class="award-item"><span class="award-year">2021</span><span class="award-title">Second Prize, National Finals, China Collegiate Computer Contest — AI Creativity Challenge (2021 Edition)</span><span class="award-links"><a href="https://aistudio.baidu.com/projectdetail/2186073">Project</a><a href="http://aicontest.baidu.com/index.html">Competition</a></span></div>
       </div>
     </section>
 
