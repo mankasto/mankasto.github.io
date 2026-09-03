@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Six capabilities for safety-critical embodied world models</title>
+  <desc id="desc">A progression from generation and modeling through understanding, reasoning, decision, and verification, ending in safe embodied action.</desc>
+  <defs>
+    <marker id="arrowNavy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#34465b"/></marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#248477"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#26384d}.title{font-size:29px;font-weight:700}.subtitle{font-size:14px;fill:#607084}.head{font-size:20px;font-weight:700}.headSm{font-size:18px;font-weight:700}.body{font-size:13px;fill:#46576b}.tiny{font-size:11px;fill:#607084}.num{font-size:12px;font-weight:700;fill:#fff}.stage{stroke-width:1.8}.blue{fill:#f3f8fd;stroke:#6b94bd}.blue2{fill:#eef6fb;stroke:#5e8db8}.amber{fill:#fff8e8;stroke:#be8a32}.teal{fill:#eff8f5;stroke:#4e968b}.safe{fill:#edf8f4;stroke:#248477}.main{fill:none;stroke:#34465b;stroke-width:2.2;marker-end:url(#arrowNavy)}.icon{fill:none;stroke:#34465b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.iconBlue{fill:none;stroke:#3978ad;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.iconTeal{fill:none;stroke:#248477;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.iconAmber{fill:none;stroke:#b47a20;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.risk{fill:none;stroke:#cc4b43;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.softLine{stroke:#a7b6c6;stroke-width:1.3;fill:none}.levelBlue{fill:#477faf}.levelAmber{fill:#b47a20}.levelTeal{fill:#248477}
+    </style>
+  </defs>
+  <rect width="1200" height="650" fill="#fff"/>
+
+  <text x="38" y="48" class="title">Six capabilities for safety-critical embodied world models</text>
+  <text x="38" y="78" class="subtitle">From plausible future generation to evidence-backed, verified action</text>
+  <path d="M188 116H1050" class="main"/>
+  <text x="620" y="102" class="subtitle" text-anchor="middle">Increasing decision relevance and safety responsibility</text>
+
+  <!-- Safety-critical embodied context -->
+  <rect x="30" y="284" width="126" height="186" rx="7" fill="#fafbfd" stroke="#8391a2" stroke-width="1.8"/>
+  <text x="93" y="310" class="headSm" text-anchor="middle">Embodied</text><text x="93" y="332" class="headSm" text-anchor="middle">world</text>
+  <g transform="translate(48 333)">
+    <rect x="0" y="0" width="90" height="60" rx="4" fill="#f1f5f8" stroke="#a2afbd"/>
+    <path d="M34 0V60M56 0V60" class="softLine" stroke-dasharray="5 5"/>
+    <rect x="38" y="27" width="14" height="23" rx="4" fill="#5e91bb" stroke="#34465b" stroke-width="1.4"/>
+    <circle cx="21" cy="15" r="5" fill="#d9a24a"/><path d="M21 20V33M13 27H29" class="icon"/>
+    <text x="45" y="75" class="tiny" text-anchor="middle">Driving</text>
+  </g>
+  <g transform="translate(51 418)">
+    <path d="M8 20H82" class="softLine"/><rect x="8" y="22" width="18" height="8" rx="2" fill="#6f9bc0"/>
+    <path d="M26 22L42 10L57 18L69 6" class="iconBlue"/><circle cx="42" cy="10" r="4" fill="#fff" stroke="#3978ad" stroke-width="2"/><circle cx="57" cy="18" r="4" fill="#fff" stroke="#3978ad" stroke-width="2"/><path d="M69 6L77 12M69 6L74 0" class="iconBlue"/>
+    <rect x="75" y="19" width="12" height="11" fill="#e7b35c" stroke="#34465b" stroke-width="1.2"/>
+  </g>
+  <path d="M156 376H175" class="main"/>
+
+  <!-- Level 1: Generation -->
+  <rect x="175" y="264" width="135" height="236" rx="7" class="stage blue"/>
+  <circle cx="194" cy="284" r="12" class="levelBlue"/><text x="194" y="288" class="num" text-anchor="middle">1</text>
+  <text x="242" y="319" class="headSm" text-anchor="middle">Generation</text>
+  <g transform="translate(196 342)">
+    <rect x="0" y="12" width="48" height="42" rx="3" fill="#fff" stroke="#6f94b6" stroke-width="1.4"/>
+    <rect x="12" y="6" width="48" height="42" rx="3" fill="#f8fbfe" stroke="#5d88ae" stroke-width="1.4"/>
+    <rect x="24" y="0" width="48" height="42" rx="3" fill="#eef6fb" stroke="#477faf" stroke-width="1.6"/>
+    <circle cx="61" cy="10" r="4" fill="#d9a24a"/><path d="M30 33L43 21L53 29L64 18" class="iconBlue"/>
+  </g>
+  <text x="242" y="426" class="body" text-anchor="middle">Plausible</text><text x="242" y="445" class="body" text-anchor="middle">future observations</text>
+
+  <!-- Level 2: Modeling -->
+  <rect x="322" y="242" width="135" height="258" rx="7" class="stage blue2"/>
+  <circle cx="341" cy="262" r="12" class="levelBlue"/><text x="341" y="266" class="num" text-anchor="middle">2</text>
+  <text x="389" y="297" class="headSm" text-anchor="middle">Modeling</text>
+  <g transform="translate(350 320)">
+    <circle cx="39" cy="30" r="12" fill="#dcebf6" stroke="#3978ad" stroke-width="2"/>
+    <circle cx="8" cy="8" r="6" fill="#fff" stroke="#3978ad" stroke-width="2"/><circle cx="70" cy="8" r="6" fill="#fff" stroke="#3978ad" stroke-width="2"/><circle cx="8" cy="58" r="6" fill="#fff" stroke="#3978ad" stroke-width="2"/><circle cx="70" cy="58" r="6" fill="#fff" stroke="#3978ad" stroke-width="2"/>
+    <path d="M14 12L29 23M64 12L49 23M14 54L29 37M64 54L49 37" class="iconBlue"/>
+  </g>
+  <text x="389" y="426" class="body" text-anchor="middle">Structured state</text><text x="389" y="445" class="body" text-anchor="middle">and dynamics</text>
+
+  <!-- Level 3: Understanding -->
+  <rect x="469" y="220" width="135" height="280" rx="7" class="stage blue2"/>
+  <circle cx="488" cy="240" r="12" class="levelBlue"/><text x="488" y="244" class="num" text-anchor="middle">3</text>
+  <text x="536" y="275" class="headSm" text-anchor="middle">Understanding</text>
+  <g transform="translate(495 306)">
+    <rect x="4" y="10" width="22" height="34" rx="5" fill="#72a3c8" stroke="#34465b" stroke-width="1.5"/>
+    <circle cx="66" cy="16" r="7" fill="#e3b45e" stroke="#34465b" stroke-width="1.5"/><path d="M66 23V43M57 32H75" class="icon"/>
+    <path d="M29 27H54" class="iconBlue" stroke-dasharray="4 4"/>
+    <path d="M1 57H82" class="softLine"/><path d="M18 57V68M40 57V68M62 57V68" class="softLine"/>
+  </g>
+  <text x="536" y="426" class="body" text-anchor="middle">Objects, relations</text><text x="536" y="445" class="body" text-anchor="middle">and constraints</text>
+
+  <!-- Level 4: Reasoning -->
+  <rect x="616" y="198" width="135" height="302" rx="7" class="stage amber"/>
+  <circle cx="635" cy="218" r="12" class="levelAmber"/><text x="635" y="222" class="num" text-anchor="middle">4</text>
+  <text x="683" y="253" class="headSm" text-anchor="middle">Reasoning</text>
+  <g transform="translate(639 291)">
+    <circle cx="7" cy="48" r="5" fill="#34465b"/>
+    <path d="M12 48C30 48 30 12 52 12H82" class="iconTeal"/><path d="M12 48H82" class="iconAmber"/><path d="M12 48C30 48 30 84 52 84H82" class="risk"/>
+    <circle cx="84" cy="12" r="5" fill="#248477"/><circle cx="84" cy="48" r="5" fill="#d89b39"/><path d="M79 79L89 89M89 79L79 89" class="risk"/>
+  </g>
+  <text x="683" y="426" class="body" text-anchor="middle">Compare action</text><text x="683" y="445" class="body" text-anchor="middle">consequences</text>
+
+  <!-- Level 5: Decision -->
+  <rect x="763" y="176" width="135" height="324" rx="7" class="stage teal"/>
+  <circle cx="782" cy="196" r="12" class="levelTeal"/><text x="782" y="200" class="num" text-anchor="middle">5</text>
+  <text x="830" y="231" class="headSm" text-anchor="middle">Decision</text>
+  <g transform="translate(790 273)">
+    <path d="M0 12H80M0 44H80M0 76H80" class="softLine"/>
+    <circle cx="11" cy="12" r="6" fill="#248477"/><path d="M31 9L36 14L45 5" class="iconTeal"/>
+    <circle cx="11" cy="44" r="6" fill="#d89b39"/><path d="M31 44H45" class="iconAmber"/>
+    <circle cx="11" cy="76" r="6" fill="#cc4b43"/><path d="M31 70L43 82M43 70L31 82" class="risk"/>
+  </g>
+  <text x="830" y="426" class="body" text-anchor="middle">Select · Defer</text><text x="830" y="445" class="body" text-anchor="middle">Reject</text>
+
+  <!-- Level 6: Verification -->
+  <rect x="910" y="154" width="135" height="346" rx="7" class="stage safe"/>
+  <circle cx="929" cy="174" r="12" class="levelTeal"/><text x="929" y="178" class="num" text-anchor="middle">6</text>
+  <text x="978" y="209" class="headSm" text-anchor="middle">Verification</text>
+  <g transform="translate(939 253)">
+    <path d="M39 0L70 11V38C70 60 56 77 39 86C22 77 8 60 8 38V11Z" fill="#dff2ec" stroke="#248477" stroke-width="2"/>
+    <path d="M24 40L34 50L55 28" class="iconTeal" stroke-width="4"/>
+    <path d="M0 103H78M8 116L13 121L21 112M29 117H70M8 137L13 142L21 133M29 138H70" class="iconTeal"/>
+  </g>
+  <text x="978" y="426" class="body" text-anchor="middle">Evidence, rules</text><text x="978" y="445" class="body" text-anchor="middle">and assurance</text>
+
+  <!-- Progression connectors -->
+  <path d="M310 382H322M457 371H469M604 360H616M751 349H763M898 338H910" class="main"/>
+
+  <!-- Outcome and verified feedback -->
+  <path d="M1045 335H1071" fill="none" stroke="#248477" stroke-width="2.5" marker-end="url(#arrowTeal)"/>
+  <rect x="1072" y="244" width="98" height="182" rx="7" fill="#f4faf8" stroke="#248477" stroke-width="1.8"/>
+  <text x="1121" y="274" class="headSm" text-anchor="middle">Safe</text><text x="1121" y="296" class="headSm" text-anchor="middle">action</text>
+  <g transform="translate(1092 304)"><path d="M29 0L54 9V31C54 49 43 62 29 70C15 62 4 49 4 31V9Z" fill="#dff2ec" stroke="#248477" stroke-width="2"/><path d="M16 31L25 40L43 21" class="iconTeal" stroke-width="4"/></g>
+  <text x="1121" y="394" class="tiny" text-anchor="middle">execute safely</text>
+</svg>
