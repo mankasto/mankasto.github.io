@@ -4,7 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kailang Ma</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Kailang Ma is a Ph.D. student at KAIST researching world models, autonomous driving, embodied AI, and trustworthy machine learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mankasto.github.io/">
+  <meta property="og:title" content="Kailang Ma · World Models &amp; Autonomous Driving">
+  <meta property="og:description" content="Ph.D. student at KAIST researching world models, autonomous driving, embodied AI, and trustworthy machine learning.">
+  <meta property="og:image" content="https://mankasto.github.io/images/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kailang Ma · World Models &amp; Autonomous Driving">
+  <meta name="twitter:description" content="Ph.D. student at KAIST researching world models, autonomous driving, embodied AI, and trustworthy machine learning.">
+  <meta name="twitter:image" content="https://mankasto.github.io/images/og.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -108,12 +118,43 @@
     .award-item {
       margin: 8px 0;
     }
+    .experience {
+      margin: 22px 0 26px;
+    }
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
+    }
+    .experience-role {
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .experience-date {
+      color: #666;
+      white-space: nowrap;
+    }
+    .experience-company {
+      color: #555;
+      margin: 2px 0 8px;
+    }
+    .experience ul {
+      margin: 8px 0 0;
+      padding-left: 22px;
+    }
+    .experience li {
+      margin: 6px 0;
+      text-align: justify;
+    }
     @media (max-width: 600px) {
       .header { flex-direction: column; text-align: center; }
       .subtitle { text-align: center; }
       .profile-img { width: 120px; height: 120px; }
       .pub { flex-direction: column; }
       .pub-thumb { width: 100%; height: auto; max-height: 200px; }
+      .experience-header { flex-direction: column; gap: 2px; }
+      .experience-date { white-space: normal; }
     }
   </style>
 <base target="_blank">
@@ -123,10 +164,10 @@
     <div class="header">
       <div class="header-left">
         <p class="name">Kailang Ma (麻开朗)</p>
-        <p class="subtitle">Incoming Ph.D. Student at KAIST · World Models &amp; Autonomous Driving</p>
+        <p class="subtitle">Ph.D. Student at KAIST · World Models &amp; Autonomous Driving</p>
         <p class="links">
           <a href="mailto:mankasto@kaist.ac.kr">Email</a> &nbsp;/&nbsp;
-          <a href="https://scholar.google.com/citations?user=kd46FagAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp;/&nbsp;
+          <a href="https://scholar.google.com/citations?user=kd46FagAAAAJ&amp;hl=zh-CN">Google Scholar</a> &nbsp;/&nbsp;
           <a href="https://github.com/mankasto">GitHub</a>
         </p>
       </div>
@@ -138,12 +179,38 @@
     <h2>About Me</h2>
 
     <p>
-      I am an incoming Ph.D. student at <a href="https://www.kaist.ac.kr/en/">KAIST</a>. I currently work as a Perception Algorithm Engineer at <a href="https://www.weride.ai">WeRide</a>, where I develop traffic-light detection and state-estimation systems for autonomous driving. I received my M.S. degree in Cyberspace Security from <a href="https://cst.buaa.edu.cn">Beihang University (BUAA)</a> in 2024 and my B.S. degree from the same university in 2021.
+      I am a Ph.D. student at <a href="https://www.kaist.ac.kr/en/">KAIST</a>. Previously, I was a Perception Algorithm Engineer on the Scene Team at <a href="https://www.weride.ai">WeRide</a>, where I worked on traffic-light perception and operational design domain (ODD) classification for autonomous driving. I received my M.S. degree in Cyberspace Security from <a href="https://cst.buaa.edu.cn">Beihang University (BUAA)</a> in 2024 and my B.S. degree from the same university in 2021.
     </p>
 
     <p>
       My research focuses on <strong>world models</strong>, autonomous driving, embodied AI, and trustworthy machine learning. I am particularly interested in how learning systems can represent uncertainty, anticipate decision-relevant consequences, and make recoverable decisions in complex dynamic environments.
     </p>
+
+    <h2>Experience</h2>
+
+    <div class="experience">
+      <div class="experience-header">
+        <span class="experience-role">Perception Algorithm Engineer · Scene Team</span>
+        <span class="experience-date"><time datetime="2024-01-10">Jan 10, 2024</time> – <time datetime="2026-04-30">Apr 30, 2026</time></span>
+      </div>
+      <div class="experience-company"><a href="https://www.weride.ai">WeRide</a> · Perception Team</div>
+      <ul>
+        <li>Developed traffic-light detection and recognition and ODD classification systems, covering image classification, state classification, 2D object detection, and anomaly detection.</li>
+        <li>Contributed across the full development lifecycle, including data management, model training, pre- and post-processing, and C++ fallback modules.</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <div class="experience-header">
+        <span class="experience-role">Perception Algorithm Intern</span>
+        <span class="experience-date"><time datetime="2023-07">Jul 2023</time> – <time datetime="2023-12">Dec 2023</time></span>
+      </div>
+      <div class="experience-company"><a href="https://www.weride.ai">WeRide</a></div>
+      <ul>
+        <li>Explored a human-in-the-loop semi-automatic annotation pipeline: manually labeled a randomly sampled calibration and estimation set, then used its precision–recall curve to choose thresholds that met target precision and recall requirements.</li>
+        <li>Filtered high-confidence pseudo-labels into the training set, retrained the model, and iterated the loop, achieving more than a 5× annotation speedup.</li>
+      </ul>
+    </div>
 
     <h2>Publications</h2>
 
@@ -182,13 +249,13 @@
     <h2>Awards</h2>
 
     <div class="award-item">
-      • First Prize, TrafficLight Recognition & Prediction, Weride Excellent Project Award, 2023
+      • First Prize, TrafficLight Recognition &amp; Prediction, Weride Excellent Project Award, 2023
     </div>
     <div class="award-item">
       • Second Prize, National Finals of China Collegiate Computer Contest - AI Creativity Challenge, 2021
     </div>
     <div class="award-item">
-      • Second Prize, ByteDance Security & Risk Control BootCamp, 2023
+      • Second Prize, ByteDance Security &amp; Risk Control BootCamp, 2023
     </div>
     <div class="award-item">
       • First-class Graduate Academic Scholarship, Beihang University, 2022-2024
