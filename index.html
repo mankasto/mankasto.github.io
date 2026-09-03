@@ -372,6 +372,30 @@
       object-fit: cover;
     }
     .pub-thumb.contain { padding: 6px; background: #ffffff; object-fit: contain; }
+    .publication-card.framework-card {
+      grid-template-columns: minmax(480px, 520px) 1fr;
+      align-items: center;
+    }
+    .framework-figure-link {
+      display: block;
+      width: 100%;
+      border-radius: 12px;
+      cursor: zoom-in;
+    }
+    .framework-figure-hint {
+      display: block;
+      margin-top: 7px;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .pub-thumb.framework-thumb {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      padding: 3px;
+    }
     .publication-body { align-self: center; }
     .pub-badges { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 8px; }
     .venue-badge {
@@ -531,6 +555,14 @@
       .news-item { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
       .news-item:last-child { border-bottom: 0; }
       .about-grid, .education-grid { grid-template-columns: 1fr; }
+      .publication-card.framework-card { grid-template-columns: 1fr; }
+      .framework-figure-link { width: 100%; }
+      .pub-thumb.framework-thumb {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        aspect-ratio: 16 / 9;
+      }
     }
     @media (max-width: 620px) {
       .nav-inner { min-height: 56px; padding: 0 18px; }
@@ -552,6 +584,9 @@
       .experience-date { display: inline-block; margin-top: 10px; white-space: normal; }
       .publication-card { grid-template-columns: 1fr; }
       .pub-thumb { width: 100%; height: auto; max-height: 210px; }
+      .pub-thumb.framework-thumb {
+        max-height: none;
+      }
       .education-card { flex-direction: column; align-items: flex-start; }
       .education-logo { flex-basis: 72px; width: 72px; height: 72px; }
       .education-logo img { max-width: 62px; max-height: 62px; }
@@ -681,8 +716,11 @@
           <img src="images/riwm.png" alt="Conceptual architecture of the Risk-Informed World Model" class="pub-thumb contain">
           <div class="publication-body"><div class="pub-badges"><span class="review-badge">Under Review</span><span class="role-badge">Perspective</span></div><span class="pub-title">Rethinking World Models for Safety-Critical Embodied Systems</span><span class="pub-authors"><strong>Kailang Ma</strong>, Heye Huang, Inhi Kim, Kitae Jang</span><span class="pub-conf">Under review</span><p class="pub-summary">Introduces the Risk-Informed World Model (RIWM), a decision-centric framework that connects decision-relevant representation, counterfactual reasoning, safety-critical episodic memory, and runtime safety assurance.</p></div>
         </article>
-        <article class="publication-card">
-          <img src="images/world-models-safe-embodied.png" alt="Six capabilities for safety-critical embodied world models: generation, modeling, understanding, reasoning, decision, and verification" class="pub-thumb contain">
+        <article class="publication-card framework-card">
+          <a href="images/world-models-safe-embodied.png" target="_blank" rel="noopener" class="framework-figure-link" aria-label="Open the world-model capability framework at full resolution">
+            <img src="images/world-models-safe-embodied.png" alt="Six capabilities for safety-critical embodied world models: generation, modeling, understanding, reasoning, decision, and verification" class="pub-thumb contain framework-thumb">
+            <span class="framework-figure-hint">Open full-resolution figure ↗</span>
+          </a>
           <div class="publication-body"><div class="pub-badges"><span class="prep-badge">In Preparation</span><span class="role-badge">Survey</span></div><span class="pub-title">World Models for Safety-Critical Embodied Systems: From Generative Simulation to Cognitive Decision-Making</span><span class="pub-conf">Survey manuscript in preparation</span><p class="pub-summary">Develops a safety-oriented taxonomy spanning representation, prediction, action conditioning, physical grounding, risk awareness, and self-improvement, and reframes evaluation around decision utility, critical-risk recall, counterfactual reasoning, uncertainty calibration, and safe action.</p></div>
         </article>
         <article class="publication-card">
