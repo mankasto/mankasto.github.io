@@ -92,3 +92,41 @@ Use the approved open progression skeleton rather than six containers. Place the
 - **Conciseness — pass:** each stage contains one unique evidence type; repeated scenes, icon grids, dashboards, and duplicate verification elements are removed.
 - **Readability — pass:** the six headings and global progression remain recognizable in the 1672 × 941 export and the 380 × 214 reduction.
 - **Aesthetics — pass:** one coherent 2.5D environment, controlled semantic palette, open grouping, and clean connector routing replace the previous collage-like density.
+
+## Information augmentation pass
+
+### Critic finding
+
+The open-layout version passes the visual-noise test, but most meaning is still carried by the six headings. Several technical marks require interpretation and do not state the capability increment explicitly.
+
+### Required semantic annotations
+
+Each capability must show one concise question and one explicit output, with the following wording preserved:
+
+| Capability | Core question | Decision-relevant output |
+|---|---|---|
+| Generation | What may happen? | Future observations |
+| Modeling | How will the world evolve? | State + dynamics |
+| Understanding | What matters for action? | Objects + relations + constraints |
+| Reasoning | How do actions change risk? | Counterfactual consequences + uncertainty |
+| Decision | Which action is acceptable? | Select · defer · reject |
+| Verification | Is evidence sufficient? | Rules + constraints + assurance |
+
+Add one compact cross-stage information contract below the capability row:
+
+**Inputs:** observation · candidate actions · context · knowledge · memory
+
+**Outputs:** future state · risk · uncertainty · evidence
+
+The annotations must replace ambiguous visual decoration rather than being added on top of it. Remove any internal labels that duplicate the new text. Preserve the single shared embodied scene and the exact six-stage ordering.
+
+### Action-risk consistency
+
+Use the same three candidate actions in the reasoning and decision stages so their semantics remain traceable: `yield → low risk`, `slow → uncertain`, and `proceed → unsafe`. The decision examples must therefore read `select (yield)`, `defer (uncertain)`, and `reject (proceed)`. These are illustrative outcomes for the depicted pedestrian-crossing context, not universal action labels.
+
+### Augmented-version QA
+
+- **Information density — pass:** every capability now exposes a question, a decision-relevant output, and a distinct visual operation.
+- **End-to-end contract — pass:** the figure names both the conditioning information and the risk-aware outputs.
+- **Action semantics — pass:** counterfactual branches and downstream decisions use consistent action-risk pairings.
+- **Thumbnail readability — pass:** the hierarchy remains recognizable in a 420-pixel-wide reduction; the high-resolution export is 1672 × 941.
